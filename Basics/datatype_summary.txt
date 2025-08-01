@@ -1,0 +1,40 @@
+main 2 types of data types
+primitive(call by value): 
+String
+Number - 100, 100.3 (no concept of float)
+Boolean - isLoggedIn - true or false
+null - its empty, not zero
+undefined - let test; test value is undefined
+Symbol: unique, const id = Symbol("123") 
+BigInt: big number 123345678543456765456n not used in real time
+---------------------------------------------------------------------------------------------
+
+//non-primitive(call by reference): 
+Array: const heros = ["batman", "superman", "ironMan"]
+Objects: data type can be string, number, object, function, array it can be anything
+let myObj ={
+name: "Allysia",
+age: 30,
+}
+Functions:
+const myFunction = function(){
+    console.log("hello")
+}
+------------------------------------------------------------------------------------------------------
+
+Return type of variables (console log typeof) in JavaScript
+1) Primitive Datatypes
+       Number => number
+       String  => string
+       Boolean  => boolean
+       null  => object
+       undefined  =>  undefined
+       Symbol  =>  symbol
+       BigInt  =>  bigint
+
+2) Non-primitive Datatypes
+       Arrays  =>  object
+       Function  =>  function
+       Object  =>  object
+
+//JavaScript is statically typed or dynamically? google

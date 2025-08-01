@@ -48,5 +48,16 @@ let stringNumber = String(number)
 console.log("stringNumber type = " + typeof stringNumber) //string
 console.log("stringNumber value = " + stringNumber) //99
 
+//*************************OPERATIONS*********************************
+let str1 = "Allysia"
+let str2 = " Datta"
+console.log("string concatenation= "+(str1+str2)) //Allysia Datta
+
+console.table([("1" + 2), (1 + "2"), ("1" + 2 + 2), (1 + 2 + "2")])
+//               12         12       122(string first e thakle convert all to string)        32(string last e thakle do operation then concatenate string)
+
+console.log(+true) //1 true+ is not allowed
+//prefix ++count first increment then use    postfix count++ first use then increment
+
 
 

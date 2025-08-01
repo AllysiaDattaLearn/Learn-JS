@@ -18,3 +18,7 @@ console.log(typeof myName) //string
 console.log(typeof age) //number
 console.log(typeof type) //undefined
 
+const id = Symbol("123")
+const anotherId = Symbol("123")
+console.log(id == anotherId) //false although value is same but its unique, return type is Symbol
+
