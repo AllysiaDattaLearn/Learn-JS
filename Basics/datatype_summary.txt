@@ -36,5 +36,29 @@ Return type of variables (console log typeof) in JavaScript
        Arrays  =>  object
        Function  =>  function
        Object  =>  object
+---------------------------------------------------------------------------------------------------------------------------
+
+Memory allocation:
+Stack(primitive data type store in memory) - makes copy, does not change value of original
+
+let pageName = "MyYoutubePage"
+let newPageName = pageName
+newPageName = "NewPage"
+console.log(pageName) //MyYoutubePage
+console.log(newPageName) //NewPage
+
+Heap(non-primitive data type store in memory) - points to the reference, no copy
+
+let userOne ={
+       email: "one@google.com",
+       age: 30
+}
+let userTwo = userOne
+userTwo.email = "two@google.com"
+console.log(userOne.email) //two@google.com
+console.log(userTwo.email) //two@google.com
+
+
 
 //JavaScript is statically typed or dynamically? google
+
