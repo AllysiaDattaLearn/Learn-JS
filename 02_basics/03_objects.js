@@ -52,3 +52,16 @@ const arrayObj = [
     }
 ]
 console.log(arrayObj[0].name) //start
+
+//object destructure most used in react
+const course = {
+    courseName: "JS",
+    courseInstructor: "hitesh",
+    paymentMode: "gpay",
+    cost: 100
+}
+
+const{courseInstructor} = course //can be accessed with courseInstructor, course.courseInstructor is not needed
+console.log(courseInstructor)
+const{courseInstructor: inst} = course //put a short name to access
+console.log(inst)
