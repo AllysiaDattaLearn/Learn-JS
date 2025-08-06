@@ -65,3 +65,15 @@ console.log(anyArray[1])
 }
 handleArray(newArray) //400
 handleArray([200, 400, 500, 700]) //another way of directly passing array
+
+//hold function in a variable, that variable is called expression
+//console.log(addTwo(5)) //cant access variable before declaration, error
+const addTwo = function(num){
+    return num + 2
+}
+console.log(addTwo(5))
+
+console.log(addOne(5)) //6 you can call function before declaration
+function addOne(num){
+    return num + 1
+}
