@@ -62,5 +62,10 @@ const myNewNums2 = myNums.filter((nums) => {
     })
 console.log(myNewNums2); //[ 5, 6, 7, 8, 9, 10 ]
 
+//map - iterates through all items in array
+const myNewNums3 = myNums.map((nums) => nums+10)
+console.log(myNewNums3); //[11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+
+
 
 
