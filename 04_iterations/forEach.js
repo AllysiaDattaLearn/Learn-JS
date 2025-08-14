@@ -25,3 +25,23 @@ coding.forEach((ele, bele, kele) => { //item, index, full array
 })
 
 //array of object
+const myCoding = [
+    {
+        langName: "javascript",
+        langFile: "js"
+    },
+    {
+        langName: "python",
+        langFile: "py"
+    },
+    {
+        langName: "java",
+        langFile: "java"
+    }
+]
+
+myCoding.forEach((item) => {
+    console.log(`language name is ${item.langName} and language file name is ${item.langFile}`); //language name is javascript and language file name is js....
+})
+
+
