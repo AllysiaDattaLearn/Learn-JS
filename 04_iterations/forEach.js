@@ -44,4 +44,23 @@ myCoding.forEach((item) => {
     console.log(`language name is ${item.langName} and language file name is ${item.langFile}`); //language name is javascript and language file name is js....
 })
 
+//adding condition check in for each
+let myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+let newNums = []
+myNums.forEach(nums => {
+    if(nums>4)
+        newNums.push(nums)
+})
+console.log(newNums); //[ 5, 6, 7, 8, 9, 10 ]
+
+//better way to do this using filter
+const myNewNums = myNums.filter((nums) => nums>4)
+console.log(myNewNums); //[ 5, 6, 7, 8, 9, 10 ]
+
+const myNewNums2 = myNums.filter((nums) => {
+    return nums>4 //need to use return keywork if using curly brace - explicit return
+    })
+console.log(myNewNums2); //[ 5, 6, 7, 8, 9, 10 ]
+
+
 
